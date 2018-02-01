@@ -1,0 +1,511 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+	
+body
+	font-family: $deff
+
+.topHeader
+	height: 100vh
+	background-image: url(../img/topBg.jpg)
+	background-size: cover
+	background-position: center
+	position: relative
+.owerlay
+	padding-left: 10%
+	padding-right: 10%
+.topLine
+	height: 100px
+	position: relative
+	// background-color: grey
+.showMenu
+	font-size: 30px
+	color: $accent
+	position: absolute
+	top: 50%
+	transform: translate(0,-50%)
+	right: 0
+	display: none
+.logo
+	display: inline-block
+	margin-top: 25px
+	// position: absolute
+	// top: 50%
+	// transform: translate(0,-50%)
+nav
+	display: inline-block
+	float: right
+	margin-right: 150px
+.mainMenu
+	display: inline
+	li
+		display: inline-block
+		margin-right: 30px
+		&:last-child
+			margin: 0
+		a
+			line-height: 100px
+			text-transform: uppercase
+			font-size: 12px
+			color: $common
+			padding-bottom: 2px
+			font-weight: bold
+			&:hover
+				color: $accent
+.headerTxt			
+	max-width: 450px
+	h1
+		margin-top: 60px	
+		font-size: 30px
+		font-weight: bold
+		&:after
+			display: block
+			box-sizing: border-box
+			content: ' '
+			width: 40px
+			border-bottom: 2px solid $accent
+			margin-top: 30px
+			margin-bottom: 30px	
+	p
+		font-weight: 100
+		font-size: 15px
+#lang
+	position: absolute
+	left: -9999px
+	display: none
+	& + label
+		float: right
+		margin-top: 35px
+		padding: 5px
+		line-height: 19px
+		text-transform: uppercase
+		font-size: 11px
+		width: 60px
+		height: 30px
+		border-radius: 30px
+		background: transparent
+		border: 1px solid #E0E0E3
+		color: $accent
+		font-weight: bold
+		cursor: pointer
+		span
+			width: 17px
+			display: inline-block
+			position: absolute
+			height: 17px
+			border-radius: 100%
+			background-color: #E0E0E3
+#lang:checked
+	& + label
+		span
+			right: 8px	
+
+.boldSpan
+	font-weight: bold
+.button
+	background-color: $accent
+	border-radius: 25px
+	text-transform: uppercase
+	color: #fff
+	font-size: 11px
+	padding: 15px 30px 15px 50px
+	display: inline-block
+	font-weight: bold
+	margin-top: 60px
+	background-image: url(../img/angle.png)
+	background-repeat: no-repeat
+	background-position: 15px 11px
+	margin-bottom: 30px
+	&:hover
+		background-color: lighten($accent, 5%)
+	i
+		font-size: 20px
+		margin-right: 5px
+.playBtn
+	width: 90px
+	height: 90px
+	border-radius: 100%
+	background-color: #fff
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	background-image: url(../img/play.png)
+	background-repeat: no-repeat
+	background-position: 39px 36px
+	box-sizing: content-box
+	&:hover
+		border: 1px solid $accent
+.language 
+  position: absolute
+  z-index: -1
+  opacity: 0
+.language + label 
+  position: relative
+  // padding: 0 0 0 60px
+  cursor: pointer
+  float: right
+  margin-top: 5px
+  display: block
+  margin-top: 39px
+.language + label:before 
+  content: ''
+  position: absolute
+  top: -4px
+  left: 0
+  width: 60px
+  height: 30px
+  border-radius: 30px
+  background: transparent
+  border: 1px solid #E0E0E3
+  transition: .2s
+.language + label:after 
+  content: ''
+  position: absolute
+  top: 3px
+  left: 7px
+  width: 17px
+  height: 17px
+  border-radius: 20px
+  background: #E0E0E3  
+  transition: .2s
+.language:checked + label:before 
+  background: #9FD468
+.language:checked + label:after 
+  left: 26px
+.language:focus + label:before 
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7)
+.titleBlock
+	padding-top: 60px
+	padding-bottom: 60px
+	p
+		font-size: 15px
+		text-align: center
+.sectTitle
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 28px
+	line-height: 30px
+	text-align: center
+	&:after
+		display: block
+		box-sizing: border-box
+		content: ' '
+		width: 40px
+		border-bottom: 2px solid $accent
+		margin-top: 30px
+		margin-bottom: 30px
+		margin:  0 auto
+		margin-top: 20px
+		margin-bottom: 20px
+.services
+	padding-bottom: 20px
+	border-bottom: 1px solid #F4F4F4	
+	border-top: 1px solid #F4F4F4
+	.titleBlock
+		border-bottom: 1px solid #F4F4F4
+.servicesList
+	max-width: 420px
+	list-style-image: url(../img/marker.png)
+  font-size: 13px 
+	li
+  	padding-left: 15px
+  	margin-left: 15px
+.servicesBlock
+	line-height: 20px
+	padding-left: 60px
+	padding-top: 60px
+	position: relative
+
+	h3
+		text-transform: uppercase
+		font-size: 15px
+		font-weight: bold
+		margin-bottom: 25px
+.info
+	position: absolute
+	top: 60px
+	right: 5%
+	font-size: 16px
+	font-family: "Times New Roman"
+	font-weight: bold
+	padding: 3px 12px
+	border: 2px solid $accent
+	color: #000
+	border-radius: 100%
+	box-sizing: content-box
+	&:hover
+		color: #fff
+		background-color: $accent
+.serviceIcon
+	height: 42px
+	width: 42px
+	margin-right: 20px
+	
+	position: absolute
+	left: 0
+.note
+	background-image: url(../img/note.png)
+	&:hover
+		background-image: url(../img/)
+.archive
+	background-image: url(../img/archive.png)
+	&:hover
+		background-image: url(../img/)
+.build
+	background-image: url(../img/build.png)
+	&:hover
+		background-image: url(../img/)
+.aim
+	background-image: url(../img/aim.png)
+	&:hover
+		background-image: url(../img/aim2.png)
+
+.reviewSection
+	border-bottom: 1px solid #F4F4F4
+.fa-quote-left
+	font-size: 20px
+	color: #CBCCD1
+.reviewText
+	font-size: 17px
+	line-height: 25px
+	margin-top: 20px
+	margin-bottom: 35px
+.fa-youtube-play
+	display: block
+	color: #fff
+	background-color: #CBCCD1
+	padding: 4px
+	border-radius: 100%
+.grand
+	position: relative
+	display: block
+	margin-top: 20px
+	max-width: 100%
+.persImg
+	cursor: pointer
+	
+.persImg:hover + .name
+	color: $accent
+.name
+	display: block
+	font-weight: bold
+	font-size: 13px
+	margin-top: 20px
+	margin-bottom: 15px
+.proffDirection
+	text-transform: uppercase
+	font-size: 12px
+	margin-right: 20px
+	position: relative
+	
+	&:after
+		content: ' \00b7 '
+		color: $accent
+		font-size: 30px
+		line-height: 0
+		position: absolute
+		top: 6px
+		right: -15px
+.miniPlayBtn
+	width: 45px
+	height: 45px
+	border-radius: 100%
+	background-color: #fff
+	position: absolute
+	top: 120px
+	left: 150px
+	box-sizing: border-box
+	&:hover
+		border: 1px solid $accent
+.fa-play
+	position: absolute
+	color: $accent
+	top: 50%
+	left: 50%
+	transform: translate(-30%,-50%)
+
+.proffSite
+	text-decoration: underline
+	color: $common
+	font-weight: bold
+	font-size: 11px
+
+.loadMore
+	text-transform: uppercase
+	color: $common
+	font-weight: bold
+	vertical-align: middle
+	display: block
+	text-align: center
+	max-width: 200px
+	margin: 0 auto
+	height: 40px
+	background-image: url(../img/load.png)
+	background-repeat: no-repeat
+	background-position: 0 0
+	margin-top: 70px	
+	margin-bottom: 65px	
+	i
+		color: $accent
+		margin-right: 10px
+		font-size: 30px
+		line-height: 36px
+
+.querySection
+	padding-top: 60px	
+	border-bottom: 1px solid #F4F4F4
+	padding-bottom: 60px	
+.field
+	width: 80%		
+	border: none
+	border-bottom: 1px solid #DDDDDD
+	
+	padding-bottom: 10px
+	padding-top: 30px	
+	text-transform: uppercase	
+	font-weight: bold	
+	font-size: 11px	
+	color: #3D4047
+	outline: 	none
+	float: right	
+	&::placeholder
+		color: #76787D
+
+
+.select
+	width: 80%
+	display: block	
+	float: right	
+	
+	a
+		margin-top: 50px
+		display: inline-block
+		width: 100%
+		font-size: 11px	
+		text-transform: uppercase	
+		color: #76787D	
+		padding: 20px	
+		font-weight: bold	
+		border: 1px solid #ddd
+		background-color: #FCFCFD
+		background-image: url(../img/angleDown.png)
+		background-repeat: no-repeat
+		background-position: 95% 50%
+.check	
+	display: none
+	border: 1px solid #ddd
+	margin-top: -1px	
+	padding-bottom: 20px			
+	input
+		position: absolute	
+		left: -9999px	
+		display: none
+	input:checked
+		+ label
+			color: $accent
+			font-weight: bold
+	label
+		display: block	
+		margin-top: 20px	
+		margin-left: 20px	
+		font-size: 13px
+		padding-left: 20px	
+		position: relative
+		&:before
+				content: " \00b0 "
+				font-size: 20px	
+				top: -2px	
+				position: absolute
+				left: 0px
+				font-weight: bold
+		&:hover
+			color: $accent
+			font-weight: bold
+			cursor: pointer
+.additional
+	textarea
+		border: 1px solid #ddd
+		height: 275px
+		width: 80%
+		padding: 10px
+		outline: none
+		&::placeholder
+			color: #ABADAF
+			font-size: 15px
+			
+	p
+		font-size: 11px
+		font-weight: bold
+		text-transform: uppercase
+		padding-bottom: 10px
+		padding-top: 30px
+		color: #76787D											
+
+input[type="submit"]
+	background-color: $accent
+	border-radius: 25px
+	text-transform: uppercase
+	color: #fff
+	font-size: 11px
+	padding: 15px 50px
+	display: inline-block
+	font-weight: bold
+	margin-top: 60px
+	border: none
+	display: block
+	margin: 0 auto
+	margin-top: 40px
+	outline: none
+	&:hover
+		background-color: lighten($accent, 5%)
+footer
+	strong
+		p
+			text-transform: uppercase
+			margin-bottom: 30px
+	padding-top: 40px
+	text-align: center
+	address
+		font-size: 18px
+	a
+		display: block
+		font-size: 18px
+
+.phoneNumber
+	color: $common
+	line-height: 40px
+.mailLink
+	color: $accent
+	text-decoration: underline
+	margin-bottom: 25px
+	font-weight: 500
+.social
+	font-size: 15px
+	padding: 8px 12px
+	border-radius: 100%
+	border: 2px solid #ddd
+	color: #ddd
+	display: inline-block
+	margin-right: 10px
+	&:hover
+		border: 2px solid #477CBF
+		color: #477CBF
+	&:last-child
+		margin: 0
+.fb	
+	padding: 10px 15px
+	font-size: 12px
+.copyRight
+	margin-top: 30px
+	margin-bottom: 30px
+
+
+	
+
+
+
+
+
+@import "media" // Всегда в конце

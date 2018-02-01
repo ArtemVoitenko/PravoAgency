@@ -1,0 +1,146 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1680px)
+	.headerTxt
+		max-width: 600px
+		h1
+			font-size: 60px
+		p
+			font-size: 25px	
+	.button
+		font-size: 20px	
+		background-position: 16px 18px
+	.mainMenu
+		li
+			a
+				font-size: 17px
+
+@media only screen and (max-width : 1200px)
+		.topHeader
+			height: 100%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	nav
+		margin-right: 50px
+	.select
+		width: 100%
+		float: none
+	.additional
+		textarea
+			width: 100%
+			height: 100px	
+	.field
+		width: 100%
+	.review
+		margin-top: 20px
+		border-bottom: 1px solid #ddd
+		padding-bottom: 10px
+	.reviewText
+		float: right
+		width: 75%
+	.fa-quote-left
+		opacity: 0
+	.info
+		right: 20%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)	
+	.headerTxt
+		h1
+			margin-top: 10px
+			font-size: 25px
+	.topLine
+		display: inline-block
+		width: 100%
+	nav
+		display: block
+		float: none
+		display: none
+		margin-right: 0
+		margin-top: 5px
+		.mainMenu
+			li
+				display: block		
+				width: 100%
+				text-align: center
+				padding: 5px
+				background-color: $accent
+				cursor: pointer
+				&:hover
+					background-color: lighten($accent, 5%)
+					a
+						color: #000
+				a
+					line-height: 20px
+					display: block
+					color: #fff
+	.reviewText
+		margin-top: 10px	
+	.info
+		right: 5%			
+	.playBtn
+		display: none
+	.showMenu
+		display: block
+	#lang + label
+		position: absolute			
+		left: 60%		
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.review
+		margin-top: 0
+		border-bottom: 1px solid #ddd
+		padding-bottom: 10px
+		text-align: center
+	.reviewText
+		margin-top: 0
+		width: 100%
+		float: none
+	.titleBlock
+		padding-top: 20px
+		padding-bottom: 20px
+	.servicesBlock
+		padding-left: 0
+	.info
+		position: relative
+		display: inline-block
+		top: -15px
+		right: 0
+	.serviceIcon
+		display: none
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
